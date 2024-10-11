@@ -1,0 +1,253 @@
+body { margin:0; width: 100%;}
+
+main {
+    width:100%;
+    min-width: 300px;
+    padding:20px 0;
+    margin:0 auto;
+}
+
+/* listagem de conselhos tutelares */
+div#listagem ul.ul_listagem {
+    margin:5px 10px 5px;
+    padding:0;
+    width: 450px;
+    height: 80px;
+    margin-bottom: 80px;
+    float:left;
+}
+
+div#listagem ul.ul_listagem li {
+    font-family: sans-serif;
+    font-size: 12px;
+    list-style: none;
+    
+}
+
+div#listagem ul.ul_listagem li h3 {
+    margin:0;   
+    font-size: 18pt;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+div#listagem ul.ul_listagem li.imagem {
+    float:left;
+    margin-right: 10px;
+
+}
+
+div#listagem ul.ul_listagem li img {
+    border:1px solid #ddd; 
+    width: 150px;
+    height:150px;  
+}
+
+@media screen and (max-width: 768px){
+    div#listagem ul.ul_listagem{
+        width: 350px;
+    }
+    
+    div#listagem ul.ul_listagem li h3 {
+        margin:0;   
+        font-size: 14pt;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    
+    div#listagem ul.ul_listagem li img {
+        width: 100px;
+        height:100px;  
+    }
+}
+
+/* _____________________________________________________________________________________ */
+
+/*Pagina de detalhes*/
+.pg-detalhes{
+    width: 100%;
+}
+
+ul.ul_detalhes {
+    margin:5px 10px 5px;
+    padding:0;
+}
+
+ul.ul_detalhes li {
+    font-family: sans-serif;
+    font-size: 12pt;
+    list-style: none;
+}
+.welcome{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul.ul_detalhes li h3 {
+    margin:0;   
+    font-size: 18pt;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+div.detalhes .image{
+    margin-right: -30px;    
+}
+
+ul.ul_detalhes li img {
+    border:1px solid #ddd; 
+    width: 350px;
+    height: 350px;
+}
+.mudarEs{
+    display: none;
+    transition: 1s;
+}
+.ampliar{
+    width: 100%;
+    height: 100%;
+    top: 95px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(54, 54, 54);
+    border: 1px solid rgb(54, 54, 54);
+}
+
+@media screen and (max-width: 992px){
+
+    ul.ul_detalhes li h3 {
+        margin:0;   
+        font-size: 14pt;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    ul.ul_detalhes li img {
+        border:1px solid #ddd; 
+        width: 200px;
+        height: 200px;
+    }
+
+    ul.ul_detalhes li {
+        font-family: sans-serif;
+        font-size: 10pt;
+        list-style: none;
+    }
+
+}
+
+/* Listagem conselheiro */
+
+.tr_list{
+    margin:5px 10px 5px;
+    padding:0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(224, 236, 255);
+}
+.tr_list:hover{
+    background-color: rgb(156, 191, 248);
+}
+th{
+    border-bottom: none;
+}
+
+#listagem_cons li{
+    font-family: sans-serif;
+    font-size: 16pt;
+    list-style: none;
+}
+.img_cons{
+    width: 80px;
+    height: 80px;
+    float:left;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+li.nome{
+    font-weight: bold; 
+}
+
+li.imagem_detalhes{
+    list-style: none;
+}
+li.imagem_detalhes img{
+    width: 200px;
+    height: 200px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+
+/*campos de pesquisa*/
+/*buscar*/
+form.buscar{
+    width: 50%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;  
+}
+
+.search-input {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #355236;
+    display: inline;
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+  }
+  
+  .search-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #355236;
+    background-color: #355236;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: 280px;
+    position: absolute;
+    transition: .5s;
+    
+  }
+
+  .search-btn:hover {
+    background-color: #FFF;
+    color: #355236;
+  }
+
+  a.voltar{
+      font-size: 20px;
+      line-height: 60%;
+  }
+
+  @media screen and (max-width: 850px){
+    form.buscar{
+        float: left;
+        margin: 20px 0 20px 20px;
+    }
+
+    .search-input{
+        width: 300px;
+        height: 30px;
+    }
+
+    .search-btn{
+        width: 100px;
+        height: 30px;
+        
+        font-size: 12px;
+    }
+    
+}

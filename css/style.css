@@ -1,0 +1,123 @@
+
+.bg{
+    background-color: rgb(195, 195, 255);
+}
+
+.tamanho{
+    width: 50%;
+    margin-top: 30px;
+    border-color: rgb(109, 119, 138);
+}
+
+#mudar{
+    margin-top: 50px;
+}
+ /*Arquivos de deletar info*/
+
+ div.div_remove{
+     display: flex;
+     flex-direction: row-reverse;
+ }
+ .btn_remove{
+     margin-left: 20px;
+ }
+
+ /* logout */
+.logout{
+    float: right;
+}
+
+/* direita */
+div.mr{
+    margin-right: 20px;
+}
+
+/* alert */
+div.alerta{
+    width: 50em; 
+    height: 20em; 
+    z-index: 10;
+    margin-top: 10px;
+    position: absolute;
+    right: 270px;
+}
+
+div.alerta h3{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+
+}
+
+div.alerta img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Detalhes da denuncia */
+.tabela{
+    font-size: 11pt;
+}
+
+.detalhes_den{
+    padding:6px;
+}
+
+.detalhes_den span.titulo{
+    font-size: 12pt;
+}
+.detalhes_den span.info{
+    font-size: 12pt;
+    font-weight: bold;  
+}
+
+
+/* Configurações */
+div#menu-vertical{
+    margin-top:10px;
+    width: 190px;
+    position:absolute;
+    left: -200px;
+    transition: 0.5s;
+    box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.329);
+    
+}
+
+div.perfil{
+    /* margin-top:50px; */
+    width: 190px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+div.perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
+    float:left;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+
+/* Campo de perguntas frequentes */
+#ul_mudanca{
+    margin: 0 20px;
+    padding: 0;
+}
+
+.li{
+    margin-bottom: 30px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ul_mudanca p{
+    margin-top: -30px;
+    border: 1px solid #ddd;
+    animation-duration: 0.3s;
+}

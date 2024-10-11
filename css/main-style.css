@@ -1,0 +1,592 @@
+/* #355236 
+   #026b06
+*/
+
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .container {
+    padding: 70px 0;
+  }
+  
+  p, li {
+    color: #444;
+    font-size: 14px;
+  }
+
+  hr{
+    background-color: #333;
+    border: 0 none;
+    color: #333;
+    height: 3px;
+  }
+  
+  /* Aproveitamento de classes */
+  
+    /* botões principais */
+    .main-btn {
+      background-color: #355236;
+      color: #FFF;
+      text-transform: uppercase;
+      width: auto;
+      height: 60px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: 3px solid transparent;
+      transition: .5s;
+    }
+  
+    .main-btn:hover {
+      text-decoration: none;
+      color: #355236;
+      background-color: transparent;
+      border-color: #355236;
+    }
+  
+    /* Titulos h3 principais */
+    .main-title {
+      color: #444;
+      margin: 0 0 65px 0;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+  /* Barra de navegação */
+  header, .navbar {
+    background-color: #0a1b0f;
+    margin-bottom: 100px;
+  }
+  
+  #nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  #logo {
+    width: 80px;
+  }
+  
+  .navbar-brand {
+    padding: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navbar-brand:hover {
+    color: #FFF;
+  }
+  
+  #navbar-links a {
+    color: #FFF;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+  }
+  
+  .nav-item.active {
+    border-bottom: 3px solid #FFF;
+  }
+  
+  .container-fluid {
+    padding: 0;
+  }
+  
+      /* Complementos nav bar */
+  
+      li.dropdown{
+        font-size: 1rem;
+      }
+    
+      ul.dropdown-menu{
+        background-color: #0a1b0f;
+      }
+    
+      li a.dropdown-item:hover{
+        background-color: unset;
+      }
+    
+      .btn-login, .btn-sair{
+        width: 90px;
+        border-radius: 25px;
+      }
+    
+      .btn-login{
+        background-color: #2d549e;
+      }
+    
+      .btn-login:hover{
+        background-color: transparent;
+        border-color: #2d549e;
+      }
+    
+      .btn-sair{
+        background-color: #ce3232;
+      }
+    
+      .btn-sair:hover{
+        background-color: transparent;
+        border-color: #ce3232;
+      }
+
+  /* Sobre o conselho */
+
+
+  #secao-conselhos {
+    width: 100%;
+  }
+
+  #secao-conselhos p{
+    margin: 0px 0px 10px 0px;
+  }
+
+  #secao-conselhos img {
+    margin: 0;
+    width: 70%;
+    height: 85%;
+  }
+  
+  .about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #about-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #about-list li {
+    line-height: 30px;
+  }
+  
+  #about-list i {
+    color: #355236;
+    margin-right: 15px;
+  }
+  
+    /*Campos complementares*/
+    #about-list li, .info-ct p{
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    #about-list .col-md-6{
+      margin-bottom: 50px;
+    }
+
+    /*estilo dos botões de ampliar e diminuir*/
+
+    #expandir-retrair{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border: none;
+      border-top: 1px solid #aaa;
+      width: 100%;
+      background-color: unset;
+    }
+    
+    .mais-menos{
+      font-size: 14px;
+      padding: 10px;
+      color: #444;
+    }
+
+    #expandir-retrair p{
+      margin: 5px 0px 0px 0px; 
+      float:left; 
+      text-align:center;
+      font-size: 14px;
+    }
+  /* Serviços */
+
+  
+  .service-box {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .service-box i, .service-box h4 {
+    transition: .5s;
+  }
+  
+  .service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .service-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .service-box:hover > i, .service-box:hover > h4 { /*Da um efeito hover no i e h4 dentro de service box*/
+    color: #026b06;
+  }
+  
+  /* Cartão dos Conselheiros */
+  .cartao{
+    width: 25%;
+    height: 'auto';
+  }
+
+  
+  a.card{
+    text-decoration: none;
+    color: #444;
+    transition: .5s;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .card:hover{
+    color: #6a7e6b;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  .card-body .card-title{
+    font-size: 19px;
+  }
+  
+  .centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  
+  /* Portfólio */
+  
+  .project-box {
+    margin-bottom: 30px;
+  }
+  
+  #filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  #portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  
+  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #FFF;
+    border: 1px solid #355236;
+    background-color: #355236;
+  }
+  
+  /* Footer */
+  
+  #contact-area {
+    text-align: center;
+  }
+  
+  .contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid ;
+  }
+  
+  .contact-box i {
+    color: #444;
+    border: solid 1px #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-box p {
+    font-size: 16px;
+  }
+  
+  .contact-tile {
+    font-weight: bold;
+    color: 355236;
+  }
+  
+  #msg-box p {
+    font-size: 22px;
+  }
+  
+  /* Campo de formulário do rodapé */
+  #contact-form input[type="text"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+  }
+  
+  #contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+  }
+  
+  #contact-form .main-btn:hover {
+    color: #355236;
+  }
+  
+  /* Copy */
+  
+  #copy-area {
+    background-color: #F1F1F1;
+  }
+  
+  #copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #copy-area .container p {
+    margin-bottom: 0;
+  }
+  
+  #copy-area .container a {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  #copy-area .container a:hover {
+    text-decoration: none;
+    color: #355236;
+  }
+  
+  /* responsive */
+  @media(max-width: 1000px){
+    .cartao{
+      padding: 0px 5px;
+      width: 20%;
+      height: auto;
+    }
+
+    .btn-login{
+      padding: 0px 5px;
+      width: 30%;
+      height: auto;
+    }
+    .btn-sair{
+      padding: 0px 5px;
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  @media(max-width: 800px) {
+    
+    /* geral */
+    .container {
+      padding: 20px 0;
+    }
+
+    .main-btn{
+      /* width: 200px; */
+      height: 50px;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+    
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+      height: auto;
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 28px;
+    }
+  
+    #mainSlider .carousel-caption p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+    
+    /* about */
+    #secao-conselhos img {
+      margin-top: 100px;
+    }
+    
+    /* data */
+    .circle-box div {
+      padding: 0 10px;
+    }
+  
+    #data-area p {
+      font-size: 16px;
+    }
+    
+    /* team */
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .card-text {
+      font-size: 12px;
+    }
+  
+    #conselheiros-area .col-md-2 {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  
+  
+    /* apply */
+    #apply-area .apply-box {
+      padding: 50px 25px;
+    }
+  
+    .project-box {
+      width: 50%;
+    }
+    /* news */
+    #news-area p {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #email-input {
+      width: 70%;
+    }
+  
+    #call-area {
+      margin-top: 30px;
+    }
+  
+    #call-area .container {
+      padding: 30px;
+    }
+  
+    #call-area p, #call-area #call-btn {
+      font-size: 16px;
+    }
+  
+  }
+
+  @media(max-width: 770px){
+    .cartao{
+      width: 50%;
+    } 
+  
+  }
+  
+  @media(max-width: 640px) {
+  
+    /* slider */
+    #mainSlider {
+      margin-top: 90px;
+    }
+  
+    #mainSlider .carousel-caption {
+      top: 5%;
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    #mainSlider .carousel-caption p {
+      display: none;
+    }
+  
+    .carousel-caption .main-btn {
+      
+      font-size: 14px;
+    }
+  
+    /* about */
+    .main-title {
+      font-size: 30px;
+    }
+  
+    #secao-conselhos img {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  
+    /* data */
+    .circle-box {
+      width: 50%;
+    }
+  
+    /* conselheiros */
+    #conselheiros-area .col-md-2 {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  
+    /* apply */
+    #apply-area {
+      height: auto;
+    }
+  
+    #company-img {
+      display: none;
+    }
+  
+    /* filter */
+    #portfolio-area .filter-btn {
+      margin-bottom: 20px;
+    }
+  
+    .project-box {
+      width: 50%;
+    }
+  
+    /* news */
+    #news-area .main-title {
+      font-size: 24px;
+    }
+  
+    #news-area p {
+      font-size: 16px;
+    }
+  
+    #email-input {
+      width: 80%;
+    }
+  
+    /* cta */
+    #call-area p, #call-area #call-btn {
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+  
+    #call-area p, #call-area #call-btn {
+      margin: 0;
+      width: 50%;
+    }
+  
+    /* contact */
+    .contact-box {
+      border: none;
+      margin-bottom: 0;
+    }
+  
+  }

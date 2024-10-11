@@ -1,0 +1,67 @@
+/* configuraçoes de logins */
+div.altura{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    
+}
+
+div.lembre{
+    margin-top: 60%;
+}
+
+.back{
+    background-color: rgb(190, 91, 247);
+}
+.erro{
+    list-style: none;
+    color: red;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+@media(max-width: 640px) {
+
+    div.card{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* Cadastro da denúncia */
+.separa{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    padding: 0 0 20px 0;
+    border: 2px solid black;
+    padding: 30px;
+}
+#parte2, #parte3, #parte4{
+    display: none;
+}
+
+#progress_bar {
+    background-color: #355236;
+    width: 25%;
+    height: 10px;
+    transition: all 100ms ease-in-out;
+    border-radius: 5px;
+}
+
+.btn_voltar_next{
+    display: flex;
+    justify-content: center;
+
+}
+.btn_proximo{
+   position: relative;
+   left:2px;
+}
+.btn_voltar{
+    background-color: #082e68;
+    margin-right: 3px;
+}
+
